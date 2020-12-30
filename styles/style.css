@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-Regular.ttf");}
+
+body {font-family: "Raleway"}
+
+
+.blocpage{display: flex;
+margin-left: 3%;
+background-color: grey}
+
+
+.hide{visibility: hidden;}
