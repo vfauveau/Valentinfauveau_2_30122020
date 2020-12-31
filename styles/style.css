@@ -2,12 +2,35 @@
   font-family: "Raleway";
   src: url("Raleway-Regular.ttf");}
 
-body {font-family: "Raleway"}
+
+header{background-color: grey; display: flex;}
+
+body {font-family: "Raleway","Sans serif";
+margin: 2%;}
 
 
-.blocpage{display: flex;
-margin-left: 3%;
-background-color: grey}
+.boutonsnavigation{display: flex ; flex-direction: row; align-items: flex-end;}
+.bloclarge2{display: flex; background-color: yellow ; justify-content: space-between;}
 
+article{
+	display:inline-flex;
+	width: 50%;
+	height: 50%;
+	background-color: grey;
+	
+}
 
+aside{	display: inline-flex;
+	width: 20%;
+	height: 20%;
+	background-color: grey;
+}
+
+.titresgras{font-weight: bold;}
+
+.Divers{display :flex ; flex-direction: row; flex-basis: auto; justify-content: space-evenly;  }
+.About{display: flex; flex-direction: column;}
+.hosting{display: flex; flex-direction: column;}
+.help{display: flex; flex-direction: column;}
+.titrefooter{font-weight: bold; font-size: 16px}
 .hide{visibility: hidden;}

@@ -8,25 +8,63 @@
 	<body>
 		<div class="blocpage">
 		<header>
-				<p> <img src="images/logo/Reservia.svg"></p>
-		<nav>
-			<p class="Bouton1">Hébergements</p>
-			<p class="Bouton2">Activités</p>
-			<p class="Bouton3">S'inscrire</p>
+			<div class="logo">
+				<p> <img src="images/logo/Reservia.svg"></p> 
+			</div>
+		<nav> <!-- liens de navigations + ancre vers les catégories dans la page-->
+			<div class="boutonsnavigation">
+				<p class="boutonheb"><a href="#ancre1">Hebergements</a></p> 
+				<p class="boutonact"><a href="#ancre2">Activités</a></p>
+				<p class="boutonsign"><a href="#"></a>S'inscrire</p>
+			</div>
 		</nav>
-			<p>Trouvez votre hébergement pour des vacances de rêve</p>
-			<p>En plein centre ville ou en pleine nature</p>
-			<p><img class="map" src="https://img.icons8.com/ios-filled/50/000000/marker.png"/></p> <input type="text" name="Marseille,France">
-			<a class="hide" href="https://icons8.com/icon/7880/marker">Marker icon by Icons8</a>
 		</header>
+		<!-- Section comprenant filtres, barre de recherche-->
 		<section>
-			<article></article>
-			<aside></aside>
+			<p class="titresgras">Trouvez votre hébergement pour des vacances de rêve</p>
+			<p>En plein centre ville ou en pleine nature</p>
+			<p><img class="map" src="https://img.icons8.com/ios-filled/50/000000/marker.png"/></p> <input class="rechercheinput" type="search" name="Marseille,France" placeholder="Marseille">
+			<a class="hide" href="https://icons8.com/icon/7880/marker">Marker icon by Icons8</a>
+			<div class="filtres">
+			<p>Filtres</p> <p>Economique</p> <p>Familial</p> <p>Romantique</p> <p>Animaux autorisés</p> <br>
+			<p>plus de 500 logements sont disponibles dans cette ville !</p>
+			</div>
 		</section>
-		<footer>
-			<div></div>
-			<div></div>
-			<div></div>
+		<!-- Section regroupant le cadre hébergement et Les plus populaires-->
+		<section class="bloclarge2">
+			<!-- Partie Hebergement-->
+			<article>
+				<p id="ancre1" class="categorieHeb">Hébergements à Marseille</p>
+				<p><img src="images/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> Cannebière</p>
+				<h5>Afficher plus</h5>
+
+			</article>
+			<!-- Les plus populaires-->
+			<aside>
+				<p class="categoriePopu"> Les plus populaires</p>
+			</aside>
+		</section>
+		<!--Section large sur les activités peut etre a diviser par deux 1 grande image + 2 images moyennes -->
+		<section>
+			<p id="ancre2" class="categorieActi">Activités à X</p>
+		</section>
+		<!-- Footer comprenant 3 div de texte (liens) -->
+		<footer class="Divers">
+			<div class="About"> <p class="titrefooter">A Propos</p>
+				<p>Fonctionnement du site</p>
+				<p>Conditions générales de ventes</p>
+				<p>Données et confidentialités</p>
+			</div>
+			<div class="hosting">
+				<p class="titrefooter">Nos Hébergements</p>
+				<p>Charte qualité</p>
+				<p>Soumettre votre hôtel</p>
+			</div>
+			<div class="help">
+				<p class="titrefooter">Assistance</p>
+				<p>Centre d'aide</p>
+				<p>Nous contacter</p>
+			</div>
 		</footer>
 		</div>
 	</body>
