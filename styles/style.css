@@ -1,43 +1,57 @@
-html{}
+
 @font-face {
   font-family: "Raleway";
   src: url("Raleway-Regular.ttf");}
 
+html{margin : 0 3%;}
+header{
+	display:flex; width: 100% ; height: auto; justify-content: space-between; align-items: center; margin-top :2%;}
 
-header{background-color: grey; display: flex; justify-content: space-between;}
+.logo{
+	margin : 0;
+	padding : 0;}
+
+.boutonsnavigation {display : flex ; justify-content: flex-end; align-items: flex-end; padding : 1.5%}
+.boutonNav1{margin : 0 20%; color: #0065FC ;}
+.boutonNav2{margin : 0 20%; color: grey ; font-weight: bold}
+.boutonNav3{margin : 0 20%; color: #0065FC ; font-weight: bold}
 
 body {font-family: "Raleway","Sans serif";
-margin: 0;}
+margin: 0;
+background-color: white;
+ }
 
 a{color: inherit; text-decoration: none;}
 
-nav{display: flex ; flex-direction: row; align-items: flex-end; border:2px solid;}
-.bloclarge2{display: flex;  justify-content: space-between;}
 
+
+.NamePicture{font-weight: bolder;}
+
+.filtres{display: inline-flex;}
+.itemfiltres {display: inline-flex ; margin : 10px;}
+
+.bloclarge2{display: flex;  align-items: flex-start;}
+
+.categorieHeb{}
 article{
 	display:flex;
-
-	background-color: grey;
-	
+	background-color: #F2F2F2;
 }
 
-aside{	display: flex;
+.blocimagemain{border : 3px solid;}
 
-	background-color: grey;
-}
+aside{}
 
 .titresgras{font-weight: bolder;}
 
-.Divers{display :flex ; flex-direction: row; flex-basis: auto; justify-content: space-evenly;  }
-.About{display: flex; flex-direction: column;}
-.hosting{display: flex; flex-direction: column;}
-.help{display: flex; flex-direction: column;}
+
 
 
 /* FOOTER */
 footer{display: block; background-color: #F2F2F2 ; width: 100%;}
+.Divers{display :flex ; flex-direction: row; justify-content: space-evenly;  }
 .titrefooter{font-weight: bold; font-size: 16px}
-.liensfooter{display: block;
+.liensfooter{display: flex;
     margin: 1rem 0;}
 
 

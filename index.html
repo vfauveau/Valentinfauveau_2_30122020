@@ -3,52 +3,78 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://kit.fontawesome.com/0a01dc4da7.js" crossorigin="anonymous"></script>
 		<title>Reservia</title>
 	</head>
 	<body>
 		<div class="blocpage">
+		<!-- HEADER -->
 		<header>
-			<div class="logo">
-				<p> <img src="images/logo/Reservia.svg"></p> 
-			</div>
-		<nav> <!-- liens de navigations + ancre vers les catégories dans la page-->
+				<p class="logo"> <img src="images/logo/Reservia.svg"></p> 
+		
+		<!-- liens de navigations + ancre vers les catégories dans la page-->
+		<nav> 
 			<div class="boutonsnavigation">
-				<p class="boutonheb"><a href="#ancre1">Hebergements</a></p> 
-				<p class="boutonact"><a href="#ancre2">Activités</a></p>
-				<p class="boutonsign"><a href="#"></a>S'inscrire</p>
+				<p class="boutonNav1"><a href="#ancre1">Hébergements</a></p> 
+				<p class="boutonNav2"><a href="#ancre2">Activités</a></p>
+				<p class="boutonNav3"><a href="#"></a>S'inscrire</p>
 			</div>
 		</nav>
 		</header>
+
+
 		<!-- Section comprenant filtres, barre de recherche-->
 		<section>
 			<p class="titresgras">Trouvez votre hébergement pour des vacances de rêve</p>
 			<p>En plein centre ville ou en pleine nature</p>
 			<p><img class="map" src="https://img.icons8.com/ios-filled/50/000000/marker.png"/></p> <input class="rechercheinput" type="search" name="Marseille,France" placeholder="Marseille">
-			<a class="hide" href="https://icons8.com/icon/7880/marker">Marker icon by Icons8</a>
+			<a class="hide" href="https://icons8.com/icon/7880/marker">Marker icon by Icons8</a> <br>
 			<div class="filtres">
-				<p>Filtres</p> <p>Economique</p> <p>Familial</p> <p>Romantique</p> <p>Animaux autorisés</p> <br>
-				<p>plus de 500 logements sont disponibles dans cette ville !</p>
+				<p>Filtres</p> <p class="itemfiltre">Economique</p> <p class="itemfiltre">Familial</p>
+				<p class="itemfiltre">Romantique</p> <p class="itemfiltre">Animaux autorisés</p>
+				<br>
 			</div>
+			<p>plus de 500 logements sont disponibles dans cette ville !</p>
 		</section>
+
+
 		<!-- Section regroupant le cadre hébergement et Les plus populaires + activités--> <!-- Main -->
 		<section class="main">
-			<!-- Partie Hebergement-->
+
+
+			<!-- Partie article Hebergement-->
 			<article>
-				<p id="ancre1" class="categorieHeb">Hébergements à Marseille</p>
-				<p><img src="images/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> Cannebière</p>
+				<h3 id="ancre1" class="categorieHeb">Hébergements à Marseille</h3> <br>
+					<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/marcus-loke-WQJvWU_HZFo-unsplash.png" alt="Image de l'auberge La Cannebière">
+						
+							<p class="NamePicture">Auberge la Cannebière</p>
+							<p>Prix à partir de <strong>25€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>
+							
+						
+					</a>
 				<h5>Afficher plus</h5>
 
 			</article>
+
 			<!-- Les plus populaires-->
 			<aside>
 				<p class="categoriePopu"> Les plus populaires</p>
 			</aside>
 		
+
 		<!--Section large -->
 			<section>
 				<p id="ancre2" class="categorieActi">Activités à X</p>
 			</section>
 		</section>
+
+
 		<!-- FOOTER -->
 		<footer class="Divers">
 			<div class="About"> <h3 class="titrefooter">A Propos</h3>
