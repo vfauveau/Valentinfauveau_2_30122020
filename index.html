@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css" media="screen">
 		<script src="https://kit.fontawesome.com/0a01dc4da7.js" crossorigin="anonymous"></script>
 		<title>Reservia</title>
 	</head>
@@ -10,7 +10,7 @@
 		<div class="blocpage">
 		<!-- HEADER -->
 		<header>
-				<p class="logo"> <img src="images/logo/Reservia.svg"></p> 
+				<a href="#" class="logo"> <img src="images/logo/Reservia.svg"></a> 
 		
 		<!-- liens de navigations + ancre vers les catégories dans la page-->
 		<nav> 
@@ -25,74 +25,153 @@
 
 		<!-- Section comprenant filtres, barre de recherche-->
 		<section>
-			<p class="titresgras">Trouvez votre hébergement pour des vacances de rêve</p>
-			<p>En plein centre ville ou en pleine nature</p>
-			<p><img class="map" src="https://img.icons8.com/ios-filled/50/000000/marker.png"/></p> <input class="rechercheinput" type="search" name="Marseille,France" placeholder="Marseille">
-			<a class="hide" href="https://icons8.com/icon/7880/marker">Marker icon by Icons8</a> <br>
+			<h1 class="titreprincipal">Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p class="textdessusbarrederecherche">En plein centre ville ou en pleine nature</p>
+
+			<!-- Recherche -->
+			<form>
+			<span id="itemMapmarker"><i class="fas fa-map-marker"></i>
+			</span>
+			
+			<input class="rechercheinput" type="search" name="Marseille,France" placeholder="Marseille" size="20">
+			<button id="searchbutton">Rechercher</button>
+			</form>
+			<br>
+
+			<!-- Filtres -->
 			<div class="filtres">
-				<p>Filtres</p> <p class="itemfiltre">Economique</p> <p class="itemfiltre">Familial</p>
-				<p class="itemfiltre">Romantique</p> <p class="itemfiltre">Animaux autorisés</p>
+				<p class="itemfiltretitre">Filtres</p>
+				<p class="itemfiltre"><i class="fas fa-money-bill-wave"></i>Economique</p>
+				<p class="itemfiltre"><i class="fas fa-baby"></i>Familial</p>
+				<p class="itemfiltre"><i class="fas fa-heart"></i>Romantique</p>
+				<p class="itemfiltre"><i class="fas fa-dog"></i>Animaux autorisés</p>
 				<br>
 			</div>
-			<p>plus de 500 logements sont disponibles dans cette ville !</p>
+			<p> <i class="fas fa-info-circle" style="color:##0065FC"></i> Plus de 500 logements sont disponibles dans cette ville !</p>
 		</section>
 
 
-		<!-- Section regroupant le cadre hébergement et Les plus populaires + activités--> <!-- Main -->
+		<!-- Section regroupant ARTICLE ET ASIDE - Main -->
 		<section class="main">
 
 
 			<!-- Partie article Hebergement-->
 			<article>
-				<h3 id="ancre1" class="categorieHeb">Hébergements à Marseille</h3> <br>
+				<h3 id="ancre1" class="titrearticle">Hébergements à Marseille</h3>
+				<div class="hebergement">
 					<a class="blocimagemain" href="#">
 					<img class="photosarticle" src="images/hebergements/true/marcus-loke-WQJvWU_HZFo-unsplash.png" alt="Image de l'auberge La Cannebière">
 						
 							<p class="NamePicture">Auberge la Cannebière</p>
-							<p>Prix à partir de <strong>25€</strong></p>
+							<p class="TextPrixArticle">Prix à partir de <strong>25€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>							
+					</a>
+
+					<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/fred-kleber-gTbaxaVLvsg-unsplash.png" alt="Hôtel du Port">
+						
+							<p class="NamePicture">Hôtel du Port</p>
+							<p class="TextPrixArticle">Prix à partir de <strong>52€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+					<a/>
+
+										<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/reisetopia-B8WIgxA_PFU-unsplash.png" alt="Hôtel les mouettes">
+						
+							<p class="NamePicture">Hôtel les mouettes</p>
+							<p class="TextPrixArticle">Prix à partir de <strong>76€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>							
+					</a>
+					<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/marcus-loke-WQJvWU_HZFo-unsplash.png" alt="Auberge de la mer">
+						
+							<p class="NamePicture">Auberge de la mer</p>
+							<p class="TextPrixArticle">Prix à partir de <strong>46€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>							
+					</a>
+
+					<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/marcus-loke-WQJvWU_HZFo-unsplash.png" alt="Image de l'auberge La Cannebière">
+						
+							<p class="NamePicture">Auberge le panier</p>
+							<p class="TextPrixArticle">Prix à partir de <strong>23€</strong></p>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color: grey;"></i>
-							
+					<a/>
+
+										<a class="blocimagemain" href="#">
+					<img class="photosarticle" src="images/hebergements/true/marcus-loke-WQJvWU_HZFo-unsplash.png" alt="Image de l'auberge La Cannebière">
 						
+							<p class="NamePicture">Hôtel chez amina</p>
+							<p class="TextPrixArticle">Prix à partir de <strong>96€</strong></p>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color:#0065FC;"></i>
+							<i class="fas fa-star" style="color: grey;"></i>							
 					</a>
+				</div>
 				<h5>Afficher plus</h5>
 
 			</article>
 
 			<!-- Les plus populaires-->
 			<aside>
-				<p class="categoriePopu"> Les plus populaires</p>
+				<h3 class="titrecategoriePopu"> Les plus populaires</h3> <i class="fas fa-chart-line"></i>
 			</aside>
 		
-
-		<!--Section large -->
-			<section>
-				<p id="ancre2" class="categorieActi">Activités à X</p>
-			</section>
 		</section>
+		<!--Section ACTIVITES -->
+			<section class="SectionActivites">
+				<h2 id="ancre2" class="TitreActivites">Activités à [NOM DE LA VILLE]</h2>
+				<div class="BoxActivites">
+					<a class="blocimageactivites" href="#">
+						<img class="activitesbigimg" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="PhotodePort">
+					</a>
+					
+				</div>
+			</section>
 
-
+		</div>
 		<!-- FOOTER -->
-		<footer class="Divers">
-			<div class="About"> <h3 class="titrefooter">A Propos</h3>
-				<a href="#" class="liensfooter">Fonctionnement du site</a>
-				<a href="#" class="liensfooter">Conditions générales de vente</a>
-				<a href="#" class="liensfooter">Données et confidentialité</a>
-			</div>
-			<div class="hosting">
-				<h3 class="titrefooter">Nos Hébergements</h3>
-				<a href="#" class="liensfooter">Charte Qualité</a>
-				<a href="#" class="liensfooter">Soumettre votre hôtel</a>
-			</div>
-			<div class="help">
-				<h3 class="titrefooter">Assistance</h3>
-				<a href="#" class="liensfooter">Centre d'aide</a>
-				<a href="#" class="liensfooter">Nous contacter</a>
+		<footer class="footer">
+			<div class="touteslesColonnes">
+				<div class="Colonne1">
+					<h3 class="titrefooter">A Propos</h3>
+					<a href="#" class="liensfooter">Fonctionnement du site</a>
+					<a href="#" class="liensfooter">Conditions générales de vente</a>
+					<a href="#" class="liensfooter">Données et confidentialité</a>
+				</div>
+				<div class="Colonne2">
+					<h3 class="titrefooter">Nos Hébergements</h3>
+					<a href="#" class="liensfooter">Charte Qualité</a>
+					<a href="#" class="liensfooter">Soumettre votre hôtel</a>
+				</div>
+				<div class="Colonne3">
+					<h3 class="titrefooter">Assistance</h3>
+					<a href="#" class="liensfooter">Centre d'aide</a>
+					<a href="#" class="liensfooter">Nous contacter</a>
+				</div>
 			</div>
 		</footer>
-		</div>
 	</body>
 </html>
