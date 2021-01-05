@@ -30,6 +30,7 @@ header{
 	margin : 0;
 	padding :0 ;}
 
+.titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
 /* Navigation */ 
 .boutonsnavigation {display : flex ; 
 	justify-content: flex-end; 
@@ -97,6 +98,7 @@ header{
   background-color: #DEEBFF;
 }
 
+.itemfiltre.i{padding : 1em; background : #DEEBFF;border-radius: 50%; }
 .itemfiltretitre{
 	display: inline-flex;
 	align-items: center;
@@ -146,7 +148,9 @@ article{
 
 .FigureArticle{background : white ; 
 	margin: 0.6em 1em; border-color: white 
-	; border-radius: 20px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; 	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
+	; border-radius: 20px; 
+	border : 0 solid ;
+	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
 	border-radius: 0.5em;
 	border-color: white;
 	padding: 0.4em;}
@@ -160,31 +164,19 @@ h5{font-size:  18px;}
 .fa-star{margin:0; margin-bottom: 1em ;}
 
 /* ASIDE */ 
-aside{display : flex ; 
+aside{display : block ; 
 	background-color: #F2F2F2 ;
 	width: 33% ; margin :0 2em ;
 	border-radius: 1em ;
-	padding: 0 2em ;
-	flex-wrap: wrap; }
+	padding: 1em 1em ; }
 
-#titrecategoriePopu{font-size: 1em; font-weight: bold ;display: flex;
-    align-content: space-around;
-    justify-content: space-between; width : 100%;
-	padding-bottom: 0em;
-	margin-bottom: 0em;}
-.titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
-
-.boxblocPopu{width: 100%;}
-
-.imgblocPopu{
-	width: 11rem;
-	max-width: 100%;
-	height: 9rem;
-	display: flex ;
-}
-
-.flottantPopu{display: flex ;float:left; flex-flow: wrap column;}
-
+.TextePopuNom{padding: 0.5em 0}
+.imgPopuColonne{width: 11em ; max-width: 100% ; height : 9em; float: left; background-color: white ; border-top-left-radius: 15px ; border-bottom-left-radius: 15px ;  }
+.ColonneImage{display: flex ; flex-direction: column; }
+.figcaptionPopu{padding: 0 ; margin: 0 ;}
+.figurePopu{margin: 1em 0em ; padding: 0 ;  background-color: white ; border-radius: 15px ;}
+.stars{}
+.Nuit{margin-bottom: 2em;}
 /*SECTION ACTIVITES */
 .Activites{
 	width: 100% ;
