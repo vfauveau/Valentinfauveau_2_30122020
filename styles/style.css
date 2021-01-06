@@ -19,11 +19,8 @@ figure{padding: 0; margin: 0;}
 header{
 	display:flex; 
 	width: 100% ; 
-	height: auto; 
 	justify-content: space-between; 
 	align-items: center; 
-	margin-top :1.5%; 
-	padding-top: 1em ; 
 	padding-bottom: 1em;}
 
 .logo{
@@ -35,19 +32,42 @@ header{
 .boutonsnavigation {display : flex ; 
 	justify-content: flex-end; 
 	align-items: flex-end; 
-	padding : 1.5%}
+	padding :0 1.5%}
 .boutonNav1{
 	margin : 0 20%; 
 	color: #0065FC ;
+	padding: 2em 0;
+	font-size : 17px ;
+
+}
+.boutonNav1:hover{
+    border-top: 2px solid #0065fc;
 }
 .boutonNav2{
 	margin : 0 20%; 
 	color: grey ; 
-	font-weight: bold}
+	font-weight: bold;
+	padding: 2em 0 ;
+	font-size : 17px ;
+
+}
+
+.boutonNav2:hover{
+	border-top: 2px solid #0065fc;
+}
+
 .boutonNav3{
 	margin : 0 20%; 
 	color: #0065FC ; 
-	font-weight: bold}
+	font-weight: bold;
+	font-size : 17px ;
+	padding: 2em 0 ;
+
+}
+
+.boutonNav3:hover{
+	border-top: 2px solid #0065fc;
+}
 
 .textdessusbarrederecherche{margin : 1em 0 320;}
 /* recherche */
@@ -84,21 +104,21 @@ header{
 
 
 /* Filtres */
-.filtres{display: flex; width: 100% ; height: auto ;}
-.itemfiltre{display: flex; align-items: flex-start; margin-right : 2.5em;
-	font-weight: bold;     border: 2px solid #d9d9d9;
+.filtres{display: inline-flex;}
+.itemfiltre{ 
+	margin-right : 3em;
+	font-weight: bold;
+	border: 2px solid #b1b1b1;
     border-radius: 2em;
-    margin-bottom: 1em;
     cursor: pointer;
-    transition-duration: 0.1s;
-    padding : 1em;
-    font-size: 1.2em ; 
+    transition-duration: 0.3s;
+	font-size: 1.2em ; 
+	padding-right: 10px;
 }
 .itemfiltre:hover{
   background-color: #DEEBFF;
 }
 
-.itemfiltre.i{padding : 1em; background : #DEEBFF;border-radius: 50%; }
 .itemfiltretitre{
 	display: inline-flex;
 	align-items: center;
@@ -106,11 +126,10 @@ header{
 	font-weight:bold; 
 	font-size: 1.5em ; 
 }
-.fa-dog{background : #DEEBFF;border-radius: 50%; }
-.fa-heart{background : #DEEBFF;border-radius: 50%;}
-.fa-baby{background : #DEEBFF;border-radius: 50%; height: 40px width : 40px;}
-.fa-money-bill-wave{ background : #DEEBFF;border-radius: 50%;}
-.fa-chart-line{display: flex; justify-content: space-between; align-items: flex-end;}
+.fa-dog{background : #DEEBFF;border-radius: 50%; border : 16px solid ; border-color: #DEEBFF; padding: 0; display: inline-flex;}
+.fa-heart{background : #DEEBFF;border-radius: 50%;border : 16px  solid ;border-color: #DEEBFF; padding: 0; display: inline-flex;}
+.fa-baby{background : #DEEBFF;border-radius: 50%; border : 16px solid ;border-color: #DEEBFF; padding: 0; display: inline-flex;}
+.fa-money-bill-wave{ background : #DEEBFF;border-radius: 50%;border : 16px solid ;border-color: #DEEBFF; padding: 0; display: inline-flex;}
 
 
 /* Bloc Principal main comprenant les containers article et aside */
@@ -132,10 +151,10 @@ article{
 .titrearticle{display: inline-block ; 
 	justify-content: flex-start; 
 	align-items: flex-start;
-	padding:0; font-weight: bold; font-size: 22px; margin : 0.6em 1em;}
+	padding:0; font-weight: bold; font-size: 20px; margin : 0.6em 1em;}
 
 .photosarticle{
-	height: 10em;
+	height: 11em;
 	max-height  : 100%;
 	width: 17em;
 }
@@ -149,11 +168,11 @@ article{
 .FigureArticle{background : white ; 
 	margin: 0.6em 1em; border-color: white 
 	; border-radius: 20px; 
-	border : 0 solid ;
+	border : 3px solid ;
 	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
 	border-radius: 0.5em;
 	border-color: white;
-	padding: 0.4em;}
+	padding: 0.3em;}
 
 .TextPrixArticle{margin : 0.5em 0;}
 h5{font-size:  18px;}
@@ -163,19 +182,33 @@ h5{font-size:  18px;}
 
 .fa-star{margin:0; margin-bottom: 1em ;}
 
-/* ASIDE */ 
-aside{display : block ; 
+/* ASIDE -- */ 
+aside{display : block; 
 	background-color: #F2F2F2 ;
 	width: 33% ; margin :0 2em ;
 	border-radius: 1em ;
 	padding: 1em 1em ; }
 
-.TextePopuNom{padding: 0.5em 0}
-.imgPopuColonne{width: 11em ; max-width: 100% ; height : 9em; float: left; background-color: white ; border-top-left-radius: 15px ; border-bottom-left-radius: 15px ;  }
-.ColonneImage{display: flex ; flex-direction: column; }
-.figcaptionPopu{padding: 0 ; margin: 0 ;}
-.figurePopu{margin: 1em 0em ; padding: 0 ;  background-color: white ; border-radius: 15px ;}
-.stars{}
+.figurePopu{
+	display: flex; 
+	align-items: center; 
+	margin-bottom: 3em; 
+	background-color: white; 
+	border-radius: 15px;
+	border: white 6px solid;	
+	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);}
+	
+.figcaptionPopu{margin-left: 15px;}
+.TextePopuNom{padding: 0.5em 0 ;}
+.imgPopuColonne{
+	width: 12em ; 
+	max-width: 100% ; 
+	height : 10em; 
+	border-top-left-radius: 15px ; 
+	border-bottom-left-radius: 15px; 
+}
+
+#titrecategoriePopu{}
 .Nuit{margin-bottom: 2em;}
 /*SECTION ACTIVITES */
 .Activites{
@@ -191,12 +224,12 @@ aside{display : block ;
 .ActiColonne2{display: flex ; flex-direction: column; margin: 0 1.5em; }
 .ActivitésLarge{background : white ; margin: 1em; border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; padding-bottom: 0.3}
 .ActivitesColonne{margin: 1em;  border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid;}
-.ActivitesImgLarge1{height: 450px ; width: 310px; border-top-right-radius: 15px ; border-top-left-radius: 15px ; }
-.ActivitesImgLarge2{height: 450px ; width: 310px; border-top-right-radius: 15px ; border-top-left-radius: 15px ; }
-.ActivitesImgColonne1{height: 225px ; width: 310px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
-.ActivitesImgColonne2{height: 162px ; width:  310px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
-.ActivitesImgColonne3{height: 225px ; width: 310px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
-.ActivitesImgColonne4{height: 162px ; width: 310px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
+.ActivitesImgLarge1{height: 450px ; width: 320px; border-top-right-radius: 15px ; border-top-left-radius: 15px ; }
+.ActivitesImgLarge2{height: 450px ; width: 320px; border-top-right-radius: 15px ; border-top-left-radius: 15px ; }
+.ActivitesImgColonne1{height: 225px ; width: 320px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
+.ActivitesImgColonne2{height: 162px ; width:  320px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
+.ActivitesImgColonne3{height: 225px ; width: 320px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
+.ActivitesImgColonne4{height: 162px ; width: 320px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
 
 .CaptionImgActi{padding: 0.5em;}
 
