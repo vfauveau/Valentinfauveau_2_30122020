@@ -4,22 +4,25 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles/style.css" media="screen">
 		<script src="https://kit.fontawesome.com/0a01dc4da7.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Reservia</title>
 	</head>
 	<body>
 		<div class="blocpage">
 		<!-- HEADER -->
 		<header>
-				<a href="#" class="logo"> <img src="images/logo/Reservia.svg"></a> 
-		
-		<!-- liens de navigations + ancre vers les catégories dans la page-->
-		<nav> 
-			<div class="boutonsnavigation">
-				<p class="boutonNav1"><a href="#ancre1">Hébergements</a></p> 
-				<p class="boutonNav2"><a href="#ancre2">Activités</a></p>
+			<div class="logoSign">
+				<a href="#" class="logo"> <img src="images/logo/Reservia.svg"></a>
 				<p class="boutonNav3"><a href="#">S'inscrire</a></p>
 			</div>
-		</nav>
+		
+		<!-- liens de navigations + ancre vers les catégories dans la page-->
+			<nav> 
+				<div class="boutonsnavigation">
+					<p class="boutonNav1"><a href="#ancre1">Hébergements</a></p> 
+					<p class="boutonNav2"><a href="#ancre2">Activités</a></p>
+				</div>
+			</nav>
 		</header>
 
 
@@ -33,7 +36,7 @@
 			<span id="itemMapmarker"><i class="fas fa-map-marker-alt"></i> </span>
 			
 			<input class="rechercheinput" type="search" name="Marseille,France" placeholder="Marseille, France" size="20">
-			<button id="searchbutton">Rechercher</button>
+			<button id="searchbutton"><p id="recherche">Rechercher</p></button>
 			</form>
 			<br>
 
@@ -150,11 +153,11 @@
 			<!-- Les plus populaires barre ASIDE -->
 
 			<aside class="aside">
-				<h3 id="titrecategoriePopu"> Les plus populaires <i class="fas fa-chart-line"></i></h3>
+				<span id="titrecategoriePopu"><h3> Les plus populaires <i class="fas fa-chart-line"></i></h3></span>
 				<div class="ColonneImage">
 					<a href=""><figure class="figurePopu">
-						<img class="imgPopuColonne" src="images/compilation/popu/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-						<figcaption class="figcaptionPopu"> <p class="TextePopuNom"> <strong>Hôtel le soleil du matin</strong></p><p class="Nuit">Nuit à partir de <strong>128€</strong></p>
+						<img class="imgPopuColonne" src="images/compilation/popu/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+						<figcaption class="figcaptionPopu"> <p class="TextePopuNom"> <strong>Hôtel le soleil du <br>matin</strong></p><p class="Nuit">Nuit à partir de<strong>128€</strong></p>
 							<div class="stars">
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
@@ -168,7 +171,7 @@
 					<a href="">
 					<figure class="figurePopu">
 						<img class="imgPopuColonne" src="images/compilation/popu/aw-creative-VGs8z60yT2c-unsplash.jpg">
-						<figcaption class="figcaptionPopu"> <p class="TextePopuNom"><strong>Au Coeur de l'eau Chambre d'hôtes</strong> </p> <p class="Nuit">Nuit à partir de <strong>71€</strong></p>
+						<figcaption class="figcaptionPopu"> <p class="TextePopuNom"><strong>Au Coeur de l'eau <br>Chambre d'hôtes</strong> </p> <p class="Nuit">Nuit à partir de <strong>71€</strong></p>
 							<div class="stars">
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
@@ -182,7 +185,7 @@
 					<a href="">
 					<figure class="figurePopu">
 						<img class="imgPopuColonne" src="images/compilation/popu/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-						<figcaption class="figcaptionPopu"><p class="TextePopuNom"> <strong>Hôtel tout bleu et tout blanc</strong> </p> <p class="Nuit">Nuit à partir de <strong>68€</strong></p> 
+						<figcaption class="figcaptionPopu"><p class="TextePopuNom"> <strong>Hôtel tout bleu <br>et tout blanc</strong> </p> <p class="Nuit">Nuit à partir de <strong>68€</strong></p> 
 							<div class="stars">
 							<i class="fas fa-star" style="color:#0065FC;"></i>
 							<i class="fas fa-star" style="color:#0065FC;"></i>
