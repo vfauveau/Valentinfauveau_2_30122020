@@ -25,7 +25,8 @@ header{display: inline-flex; justify-content: space-between;
 	padding :0 ;
 	padding-top: 1em;}
 
-.titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
+
+
 /* Navigation */ 
 .blocMenu{
 	display: inline-flex ; 
@@ -53,7 +54,6 @@ header{display: inline-flex; justify-content: space-between;
 .boutonNav2:hover{
 	border-top: 2px solid #0065fc;
 }
-.boutonSign{display: inline-flex;}
 .bouton3{
 	margin-right: 1.5em;
 	order : 3;
@@ -63,6 +63,8 @@ header{display: inline-flex; justify-content: space-between;
 	padding-top: 2em ;
 	margin-top: 0 ;}
 
+
+.titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
 .textdessusbarrederecherche{margin : 1em 0;}
 /* recherche */
 .rechercheinput{
@@ -187,12 +189,12 @@ aside{display : block;
 	border-radius: 1em ;
 	padding: 1em 1em ; }
 
-#titrecategoriePopu{font-size: 20px ; font-weight: bold; margin-bottom: 2em ;}
+#titrecategoriePopu{font-size: 20px ; font-weight: bold; margin-bottom: 2em ; padding-top: 2em ;}
 .figurePopu{
 	display: flex; 
 	align-items: center; 
 	justify-content: center;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 	margin-top: 1em ; 
 	background-color: white; 
 	border-radius: 15px;
@@ -255,18 +257,26 @@ footer{margin:0 ;padding:0;}
 	margin-bottom: 1em;
 	}
 
+@media screen and (min-width: 1566px) and (max-width: 1700px){
 
+		.blocpage{margin: 0 1em; padding: 0; display: block;}
+		.photosarticle{
+		height: 10em;
+		max-height  : 100%;
+		width: 16em;}
+}
 
+/* de 1200 a 1565px */
 
-/* de 1200 a 1450px */
-
-@media screen and (min-width: 1201px) and (max-width: 1450px){
+@media screen and (min-width: 1201px) and (max-width: 1565px){
 		.blocpage{margin: 0 1em; padding: 0; display: block;}
 		.photosarticle{
 		height: 8em;
 		max-height  : 100%;
 		width: 13em;}
 
+	.ActivitésLarge, .ActiColonne4, .ActiColonne2{margin: 0.5em;}
+	footer{padding-bottom: 2em ;}
 
 }
 
@@ -276,22 +286,22 @@ footer{margin:0 ;padding:0;}
 	/* ------------ */
 
 @media screen and (min-width: 701px) and (max-width: 1200px){
-	.blocpage{margin: 2em 2em; padding: 0; display: block; }
+	.blocpage{margin: 2em 2em; padding: 0;  display: block;}
 	.main{width: 100% ; 
 		display: flex; 
-		margin: 0em 0 ;
-		flex-flow: wrap;}
+		flex-direction: column;
+		margin: 0em 0 ;}
 
-	article{width: 100%; padding: auto ;}
+	article{width: 100%; padding: 0.5em;}
 	.FigureArticle{margin: 0.5em;}
 	.photosarticle{
 		height: 10em;
 		max-height  : 100%;
 		width: 16em;}
-	aside{width: 100% ; order : -1; height: 50%; margin-bottom: 2em ;}
+	aside{width: 100% ; order : -1; height: 50%; margin-bottom: 2em ; margin-left: 0 ; padding-left: 0.5em ;}
 	.ColonneImage{max-width: 70%; margin-left: 100px;}
 	.itemfiltre{display: flex ; align-items: center; margin-right: 2em ; }
-
+	.figurePopu{align-items: flex-start; justify-content: flex-start;}
 	#titrecategoriePopu{display: block; }
 
 	.Activites{
@@ -301,24 +311,27 @@ footer{margin:0 ;padding:0;}
 		order : 2;
 		padding: auto;}
 
-	.actibloc1, .actibloc2{display: flex ; flex-direction: column; align-items: center; justify-content: center;}
+	.actibloc1, .actibloc2{display: flex ; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1em ;}
 	.headerTitreActivites{
 		font-size: 19px; 
 		text-align: center;}
 	.Activitessansheader{display: flex; align-items: center ; justify-content: center;}
 
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
-	{width: 400px ; height: 250px;  display: flex;}
+	{width: 300px ; height: 200px;  display: flex;}
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em;}
 }
 
-	/* ECRAN MOBILE */ 
+	footer{padding-bottom: 5em ; margin-right: 0;}
+
+
+	/* ECRAN MOBILE  344px à 700px*/ 
 	/* ------------ */
 
 @media screen and (min-width : 344px) and (max-width : 700px){
 	body{margin: 0; padding: 0; max-width: 100%; 
-		margin-top: 1em ; margin-left: 0 ;}
-	.blocpage{margin: 0; padding: 0; display: block; padding-left: 0.5em ;}
+		margin-top: 1em  ;}
+	.blocpage{margin: 0; padding: 0; display: block;}
 	header{
 	padding-top: 0.5em ; 
 	display:block; 
@@ -333,19 +346,17 @@ footer{margin:0 ;padding:0;}
 		display: flex; flex-direction: column;
 	}
 
+	.blocintro{margin-left: 1.5em;}
 	.titreprincipal{
 		font-weight: bold;
 		font-size: 20px; 
-		width: 100%; 
-		margin : 0.5em 0;}
+		width: 100%; }
 
-	.logo{padding-top: 0;}
+	.logo{padding-top: 0; margin-bottom: 0.5em;}
 	.boutonNav1, .boutonNav2{
-	 	display : block ; 
-
+	 	display : flex ; 
 	 	margin: 0 ; 
-	 	padding: 1em 3em  ; 
-	 	margin : 0em; 
+	 	padding: 1em 2.5em  ; 
 	 	font-weight: bold ; 
 	 	font-size: 16px ;
 	 	border-top: 0 ;
@@ -371,7 +382,7 @@ footer{margin:0 ;padding:0;}
     	border-top: 0 solid white ;
     	border-bottom-color: #0065fc;
 	}
-	.bouton3{display: flex ;}
+	.boutonSign{display: flex; flex-direction: row-reverse; }
 	.fa-star{margin-bottom: 0.2em}
 
 	/* ECRAN MOBILE Barre de recherche */
@@ -394,7 +405,8 @@ footer{margin:0 ;padding:0;}
 		order : -1; 
 		width: 100% ;
 		margin: 0; 
-		padding : 0.8em;}
+		padding : 0.8em;
+		margin-left: 0;}
 
 	.aside{display: flex ; 
 		flex-flow: wrap column ;
@@ -414,7 +426,7 @@ footer{margin:0 ;padding:0;}
 	max-width: 100% ; 
 	height : 135px;
 	}
-	#titrecategoriePopu{display: inline-block; text-align: left;}
+	#titrecategoriePopu{display: inline-block; text-align: left; justify-content: flex-start;}
 	.ColonneImage{display: inline-block;}
 	.figcaptionPopu{margin-left: 1px; float: right; max-width: 150px;}
 	.Nuit{margin-bottom: 0.9em;}
@@ -442,20 +454,23 @@ footer{margin:0 ;padding:0;}
 	.Activites{
 		width: 100% ;
 		border : white ; 
-		display: block; 
 		order : 2;}
 	.headerTitreActivites{font-size: 19px; padding-left: 4em ;}
 	.Activitessansheader{
-		display: block ;}
-	.actibloc1, .actibloc2{display: block ; }
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	 	flex-wrap: wrap;}
+	.actibloc1, .actibloc2{display: flex ; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center;}
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
-	{width: 335px ; height: 120px; display: block ;}
+	{width: 340px ; height: 120px; display: block ;}
 
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width:  340px; display: block ; }
 	.ActivitésLarge{max-width: 340px ; display: block ; }
 
 	/*ECRAN MOBILE  FOOTER */ 
-
+	footer{margin-right: 0;}
 	.titrefooter{margin-top: 1.5em;}
 	.touteslesColonnes{
 		display: block;
