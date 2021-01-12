@@ -15,58 +15,55 @@ figure{padding: 0; margin: 0;}
 .blocpage{
 	margin:0 7em;
  	margin-bottom: 0;}
-/* Header */
-header{
-	display:flex; 
-	width: 100% ; 
-	justify-content: space-between; 
-	align-items: center; 
-	padding-bottom: 1em;}
+
+	/* Header */
+header{display: inline-flex; justify-content: space-between;
+	width: 100% ;}
 
 .logo{
 	margin : 0;
-	padding :0 ;}
+	padding :0 ;
+	padding-top: 1em;}
 
 .titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
 /* Navigation */ 
-.boutonsnavigation {display : flex ; 
-	justify-content: flex-end; 
-	align-items: flex-end; 
+.blocMenu{
+	display: inline-flex ; 
 	padding :0 1.5%}
-.boutonNav1{
-	margin : 0 20%; 
-	color: #0065FC ;
-	padding: 2em 0;
-	font-size : 17px ;
 
+.boutonsNav{display: inline-flex;}
+.boutonNav1{
+	padding-top: 2em ;
+	margin-right: 5.5rem ;
+	margin-top: 0 ;
+	color: #0065FC ;
+	font-size : 1em ;
 }
 .boutonNav1:hover{
     border-top: 2px solid #0065fc;
 }
 .boutonNav2{
-	margin : 0 20%; 
+	margin-right: 5.5rem;
 	color: grey ; 
 	font-weight: bold;
-	padding: 2em 0 ;
-	font-size : 17px ;
-
+	font-size : 1em ;
+	padding-top: 2em ;
+	margin-top: 0 ;
 }
-
 .boutonNav2:hover{
 	border-top: 2px solid #0065fc;
 }
-
-.boutonNav3{
-	margin : 0 20%; 
+.boutonSign{display: inline-flex;}
+.bouton3{
+	margin-right: 1.5em;
+	order : 3;
 	color: #0065FC ; 
 	font-weight: bold;
-	font-size : 17px ;
-	padding: 2em 0 ;
+	font-size : 1em ;
+	padding-top: 2em ;
+	margin-top: 0 ;}
 
-}
-
-
-.textdessusbarrederecherche{margin : 1em 0 320;}
+.textdessusbarrederecherche{margin : 1em 0;}
 /* recherche */
 .rechercheinput{
 	border-right: none;
@@ -95,13 +92,11 @@ header{
 #itemMapmarker{background-color: #F2F2F2;
     padding: 1.20em 1em;
     border-radius: 1em 0 0 1rem;
-    text-align: flex-start;
     display: inline-flex; 
     justify-content: flex-start;
 }
 
-.fa-search{visibility: hidden;}
-
+.iconSearch{display: none;}
 /* Filtres */
 .filtres{display: inline-flex;}
 .itemfiltre{ 
@@ -163,8 +158,8 @@ article{
 }
 
 .hebergement{display:flex;
-	align-items: flex-start;
-	justify-content: flex-start;
+	align-items: center;
+	justify-content: center;
 	flex-flow: wrap;
 	width: 100%;}
 
@@ -183,7 +178,7 @@ h5{font-size:  18px;}
 .NamePicture{font-weight: bold;
 	margin: 0.5em 0;}
 
-.fa-star{margin:0; margin-bottom: 1em ;}
+.fa-star{margin:0; margin-bottom: 0.5em ;}
 
 /* ASIDE -- SIDEBAR -- POPULAIRES */ 
 aside{display : block; 
@@ -192,13 +187,16 @@ aside{display : block;
 	border-radius: 1em ;
 	padding: 1em 1em ; }
 
+#titrecategoriePopu{font-size: 20px ; font-weight: bold; margin-bottom: 2em ;}
 .figurePopu{
 	display: flex; 
 	align-items: center; 
-	margin-bottom: 3em; 
+	justify-content: center;
+	margin-bottom: 1em;
+	margin-top: 1em ; 
 	background-color: white; 
 	border-radius: 15px;
-	border: white 6px solid;	
+	border: white 3px solid;	
 	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);}
 	
 .figcaptionPopu{margin-left: 15px;}
@@ -212,18 +210,20 @@ aside{display : block;
 }
 
 .Nuit{margin-bottom: 2em;}
+
 /*SECTION ACTIVITES */
 .Activites{
 	width: 100% ;
 	border : white ;}
 
 .Activitessansheader{
-	display: flex; width: 100% ;
+	display: flex; width: 100% ; align-items: center;
 }
-
-.ActiColonne1{display: flex ; justify-content: flex-start;}
+.actibloc1, .actibloc2{display: flex ; }
 .ActiColonne4, .ActiColonne2{display: flex ; flex-direction: column; margin: 0 1em; }
-.ActivitésLarge{background : white ; margin: 1em; border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; padding-bottom: 0.3}
+.ActivitésLarge{background : white ; margin: 1em; border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; 
+	padding-bottom: 0.3em ;}
+
 .ActivitesColonne{margin: 1em;  border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid;}
 .ActivitesImgLarge1, .ActivitesImgLarge2{height: 450px ; width: 320px; border-top-right-radius: 15px ; border-top-left-radius: 15px ; }
 .ActivitesImgColonne1, .ActivitesImgColonne3{height: 225px ; width: 320px ; border-top-right-radius: 15px ; border-top-left-radius: 15px ; display: flex ; flex-direction: column;}
@@ -232,6 +232,7 @@ aside{display : block;
 .CaptionImgActi{padding: 0.5em;}
 
 /* FOOTER */
+
 footer{margin:0 ;padding:0;}
 .footer{
 	background-color: #F2F2F2;
@@ -257,69 +258,135 @@ footer{margin:0 ;padding:0;}
 
 
 
-	/* ECRAN MOBILE */ 
+/* de 1200 a 1450px */
 
-@media screen and (min-width : 350px) and (max-width : 700px){
-	body{margin: 0; padding: 0; max-width: 100%;
-		margin-top: 1em ; }
-	.blocpage{margin: 0; padding: 0; display: block; }
+@media screen and (min-width: 1201px) and (max-width: 1450px){
+		.blocpage{margin: 0 1em; padding: 0; display: block;}
+		.photosarticle{
+		height: 8em;
+		max-height  : 100%;
+		width: 13em;}
+
+
+}
+
+
+
+/* ECRAN TABLETTES ET PETITS ECRANS * 701px à 1200px/ 
+	/* ------------ */
+
+@media screen and (min-width: 701px) and (max-width: 1200px){
+	.blocpage{margin: 2em 2em; padding: 0; display: block; }
+	.main{width: 100% ; 
+		display: flex; 
+		margin: 0em 0 ;
+		flex-flow: wrap;}
+
+	article{width: 100%; padding: auto ;}
+	.FigureArticle{margin: 0.5em;}
+	.photosarticle{
+		height: 10em;
+		max-height  : 100%;
+		width: 16em;}
+	aside{width: 100% ; order : -1; height: 50%; margin-bottom: 2em ;}
+	.ColonneImage{max-width: 70%; margin-left: 100px;}
+	.itemfiltre{display: flex ; align-items: center; margin-right: 2em ; }
+
+	#titrecategoriePopu{display: block; }
+
+	.Activites{
+		width: 100% ;
+		border : white ; 
+		display: block; 
+		order : 2;
+		padding: auto;}
+
+	.actibloc1, .actibloc2{display: flex ; flex-direction: column; align-items: center; justify-content: center;}
+	.headerTitreActivites{
+		font-size: 19px; 
+		text-align: center;}
+	.Activitessansheader{display: flex; align-items: center ; justify-content: center;}
+
+	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
+	{width: 400px ; height: 250px;  display: flex;}
+	.ActivitesColonne{margin: 0 ; margin-bottom: 1em;}
+}
+
+	/* ECRAN MOBILE */ 
+	/* ------------ */
+
+@media screen and (min-width : 344px) and (max-width : 700px){
+	body{margin: 0; padding: 0; max-width: 100%; 
+		margin-top: 1em ; margin-left: 0 ;}
+	.blocpage{margin: 0; padding: 0; display: block; padding-left: 0.5em ;}
 	header{
+	padding-top: 0.5em ; 
 	display:block; 
 	width: 100% ; 
 	padding-bottom: 1em;}
 
 	.main{max-width: 100% ; 
 		height: auto ;
-		width: 375px;
 		background-color: white ; 
 		display: block; 
 		margin: 2em 0 ;
-		display: flex; flex-direction: column;}
+		display: flex; flex-direction: column;
+	}
 
-	.titreprincipal{font-weight: bold; font-size: 21px; width: 100%; margin : 0.5em 0;}
-	.boutonsnavigation{display : inline-flex ; 
-	 }
-	 .boutonNav1, .boutonNav2{display : inline-flex ; 
-	 	justify-content : space-between ; 
-	 	align-items: center; 
+	.titreprincipal{
+		font-weight: bold;
+		font-size: 20px; 
+		width: 100%; 
+		margin : 0.5em 0;}
+
+	.logo{padding-top: 0;}
+	.boutonNav1, .boutonNav2{
+	 	display : block ; 
+
 	 	margin: 0 ; 
 	 	padding: 1em 3em  ; 
 	 	margin : 0em; 
 	 	font-weight: bold ; 
 	 	font-size: 16px ;
 	 	border-top: 0 ;
-	 	border-bottom: 2px solid ; }
+	 	border-bottom: 2px solid ; 
+	 }
 
 
 		.boutonNav1:active{
-    	border-bottom: 2px solid #0065fc;
-    	border-top: 0 white	;
+    	border-bottom: 2px solid #F2F2F2;
 		}
 
 		.boutonNav2:active{
-		border-bottom: : 2px solid #0065fc;
+		border-bottom: : 2px;
+		border-bottom-color: #0065fc ;
 		border-top: 0 white; 
 		}
-		.boutonNav3{padding-top: 0.8em;
-			margin-left: 100% ; }
-	.fa-star{margin-bottom: 0.2em}
 
-	.logoSign{
-		display: inline-flex; 
-		justify-content: flex-start; 
-		align-items: flex-start;}
+		
+	.boutonNav1:hover{
+    	border-top: 0 solid white;
+		}
+	.boutonNav2:hover{
+    	border-top: 0 solid white ;
+    	border-bottom-color: #0065fc;
+	}
+	.bouton3{display: flex ;}
+	.fa-star{margin-bottom: 0.2em}
 
 	/* ECRAN MOBILE Barre de recherche */
 
-
+	#recherche{display: none}
+	.iconSearch{display: block;}
 	/* ECRAN MOBILE FILTRES */
 	.filtres{display: inline-block;}
 	.itemfiltre{
-	margin-right : 0;
-	border: 2px solid #b1b1b1;
-    border-radius: 2em;
-	font-size: 15px ;
-	padding-right: 0;}
+		margin-right : 0;
+		border: 2px solid #b1b1b1;
+	    border-radius: 2em;
+		font-size: 15px ;
+		padding-right: 0;
+}
 
 
 	/* ECRAN MOBILE SIDEBAR POPULAIRES */ 
@@ -335,12 +402,12 @@ footer{margin:0 ;padding:0;}
 		justify-content: center}
 
 	.figurePopu{
-	display: inline-block; 
-	margin-bottom: 2em; 
-	border-radius: 15px;
-	border: white 3px solid;	
-	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
-	width: 90%;}
+		display: inline-block; 
+		margin-bottom: 2em; 
+		border-radius: 15px;
+		border: white 3px solid;	
+		box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
+		width: 90%;}
 
 	.imgPopuColonne{
 	width: 150px ; 
@@ -365,11 +432,10 @@ footer{margin:0 ;padding:0;}
 		padding: 0;}
 
 	.photosarticle{
-		height: 120px;
+		height: 150px;
 		max-height  : 100%;
 		width: 320px;
 		}
-
 
 
 	/* ECRAN MOBILE ACTIVITES */
@@ -377,23 +443,23 @@ footer{margin:0 ;padding:0;}
 		width: 100% ;
 		border : white ; 
 		display: block; 
-		align-items: center;
 		order : 2;}
-	.headerTitreActivites{font-size: 19px; text-align: center;}
+	.headerTitreActivites{font-size: 19px; padding-left: 4em ;}
 	.Activitessansheader{
-		display: flex ;
-		flex-flow: wrap column ;
-		justify-content: center;}
-.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
-	{width: 340px ; height: 120px; }
-	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width: 340px ;}
-	.ActivitésLarge{max-width: 340px ; }
+		display: block ;}
+	.actibloc1, .actibloc2{display: block ; }
+	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
+	{width: 335px ; height: 120px; display: block ;}
+
+	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width:  340px; display: block ; }
+	.ActivitésLarge{max-width: 340px ; display: block ; }
+
 	/*ECRAN MOBILE  FOOTER */ 
 
 	.titrefooter{margin-top: 1.5em;}
 	.touteslesColonnes{
-	display: block;
-    max-width: 100%;
-    text-align: center
-    padding: 2em;margin: 1em;
+		display: block;
+	    max-width: 100%;
+	    text-align: left ;
+	    padding: 2em;margin: 1em;}
 }
