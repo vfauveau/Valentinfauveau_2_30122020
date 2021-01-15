@@ -63,6 +63,13 @@ header{display: inline-flex; justify-content: space-between;
 	padding-top: 2em ;
 	margin-top: 0 ;}
 
+.bouton4{display: none;
+	color: #0065FC ; 
+	font-weight: bold;
+	font-size : 1em ;
+	padding-top: 2em ;
+	margin-top: 0 ;}
+
 
 .titreprincipal{font-weight: bold; font-size: 2em; width: 100%; margin : 0.5em 0;}
 .textdessusbarrederecherche{margin : 1em 0;}
@@ -79,19 +86,21 @@ header{display: inline-flex; justify-content: space-between;
     font-weight: bold;
     font-family: "Raleway", "Sans serif";}
 
-#searchbutton{
+#searchbutton{font-family: "Raleway", "Sans serif";
 	display: inline-flex;
 	justify-content: center;
 	background-color: #0065FC ; 
+	font-weight: bold ;
 	color: white ;
- 	padding : 0.6em 1rem ; 
+ 	padding : 1em 1rem ; 
  	margin : 0; 
  	border : 1px solid; 
 	border-bottom-right-radius: 15px ; 
 	border-top-right-radius: 15px ;
 	font-size: 1em;
 }
-#itemMapmarker{background-color: #F2F2F2;
+#itemMapmarker{
+	background-color: #F2F2F2;
     padding: 1.20em 1em;
     border-radius: 1em 0 0 1rem;
     display: inline-flex; 
@@ -107,7 +116,6 @@ header{display: inline-flex; justify-content: space-between;
 	border: 2px solid #b1b1b1;
     border-radius: 2em;
     cursor: pointer;
-    transition-duration: 0.3s;
 	font-size: 1.2em ; 
 	padding-right: 10px;
 }
@@ -149,9 +157,10 @@ article{
 	border-radius: 1em;}
 
 .titrearticle{display: inline-block ; 
-	justify-content: flex-start; 
-	align-items: flex-start;
-	padding:0; font-weight: bold; font-size: 20px; margin : 0.6em 1em;}
+	padding:0;
+	font-weight: bold;
+	font-size: 20px;
+    margin : 0.6em 1em;}
 
 .photosarticle{
 	height: 11em;
@@ -187,20 +196,29 @@ aside{display : block;
 	background-color: #F2F2F2 ;
 	margin :0 2em ;
 	border-radius: 1em ;
-	padding: 1em 1em ; }
+	padding: 1em 0.5em ;
+ }
 
-#titrecategoriePopu{font-size: 20px ; font-weight: bold; margin-bottom: 2em ; padding-top: 2em ;}
+#titrecategoriePopu{display: flex ; 
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px ; 
+	font-weight: bold;  
+}
+
+#titrepopu{font-size: 20px;
+margin : 0.6em 1em ;}
+
 .figurePopu{
 	display: flex; 
 	align-items: center; 
-	justify-content: center;
 	margin-bottom: 3em;
 	margin-top: 1em ; 
 	background-color: white; 
 	border-radius: 15px;
 	border: white 3px solid;	
 	box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);}
-	
+
 .figcaptionPopu{margin-left: 15px;}
 .TextePopuNom{padding: 0.5em 0 ;}
 .imgPopuColonne{
@@ -219,11 +237,12 @@ aside{display : block;
 	border : white ;}
 
 .Activitessansheader{
-	display: flex; width: 100% ; align-items: center;
+	display: flex;
+	width: 100% ;
 }
 .actibloc1, .actibloc2{display: flex ; }
 .ActiColonne4, .ActiColonne2{display: flex ; flex-direction: column; margin: 0 1em; }
-.ActivitésLarge{background : white ; margin: 1em; border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; 
+.ActivitesLarge{  margin: 1em; border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid ; 
 	padding-bottom: 0.3em ;}
 
 .ActivitesColonne{margin: 1em;  border-color: white ; border-radius: 15px; box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.21); border : 0 solid;}
@@ -257,6 +276,7 @@ footer{margin:0 ;padding:0;}
 	margin-bottom: 1em;
 	}
 
+/* 1566px à 1700px */
 @media screen and (min-width: 1566px) and (max-width: 1700px){
 
 		.blocpage{margin: 0 1em; padding: 0; display: block;}
@@ -265,6 +285,7 @@ footer{margin:0 ;padding:0;}
 		max-height  : 100%;
 		width: 16em;}
 }
+
 
 /* de 1200 a 1565px */
 
@@ -275,9 +296,7 @@ footer{margin:0 ;padding:0;}
 		max-height  : 100%;
 		width: 13em;}
 
-
-	footer{padding-bottom: 2em ;}
-
+		footer{padding-bottom: 2em ;}
 }
 
 
@@ -300,35 +319,54 @@ footer{margin:0 ;padding:0;}
 		width: 16em;}
 	aside{width: 100% ; order : -1; height: 50%; margin-bottom: 2em ; margin-left: 0 ; padding-left: 0.5em ;}
 	.ColonneImage{max-width: 70%; margin-left: 100px;}
-	.itemfiltre{display: flex ; align-items: center; margin-right: 2em ; }
-	.figurePopu{align-items: flex-start; justify-content: flex-start;}
-	#titrecategoriePopu{display: block; }
+	.itemfiltre{
+		display: flex ; 
+		align-items: center; 
+		margin-right: 0; }
+
+	.figurePopu{
+		align-items: flex-start; 
+		justify-content: flex-start;}
+
+	.itemfiltretitre{margin-right: 1em;}
+	.filtres{display: flex ;
+		flex-wrap: wrap;
+		align-items: center; 
+		justify-content: space-between; 
+		width: 100%;}
 
 	.Activites{
 		width: 100% ;
 		border : white ; 
 		display: block; 
-		order : 2;
-		padding: auto;}
+		order : 2;}
 
-	.actibloc1, .actibloc2{display: flex ; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1em ;}
-	.headerTitreActivites{
+	.actibloc1, .actibloc2{
+		display: flex ; 
+		flex-direction: column; 
+		align-items: center; 
+		justify-content: center; 
+		margin-bottom: 1em ;}
+
+	#headerTitreActivites{
 		font-size: 19px; 
 		text-align: center;}
-	.Activitessansheader{display: flex; align-items: center ; justify-content: center;}
+
+	.Activitessansheader{display: flex; 
+		align-items: center ; 
+		justify-content: center;}
 
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
 	{width: 300px ; height: 200px;  display: flex;}
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em;}
+	footer{padding-bottom: 5em ; margin-right: 0;}
 }
 
-	footer{padding-bottom: 5em ; margin-right: 0;}
 
-
-	/* ECRAN MOBILE  344px à 700px*/ 
+	/* ECRAN MOBILE  355px à 700px*/ 
 	/* ------------ */
 
-@media screen and (min-width : 344px) and (max-width : 700px){
+@media screen and (min-width : 355px) and (max-width : 700px){
 	body{margin: 0; padding: 0; max-width: 100%; 
 		margin-top: 1em  ;}
 	.blocpage{margin: 0; padding: 0; display: block;}
@@ -352,15 +390,23 @@ footer{margin:0 ;padding:0;}
 		font-size: 20px; 
 		width: 100%; }
 
-	.logo{padding-top: 0; margin-bottom: 0.5em;}
+	.logo{
+		display : flex ; 
+		justify-content : space-around ; 
+		padding-top: 0; 
+		margin-bottom: 0.5em;
+	}
+
 	.boutonNav1, .boutonNav2{
-	 	display : flex ; 
+	 	display : block ; 
 	 	margin: 0 ; 
 	 	padding: 1em 2.5em  ; 
 	 	font-weight: bold ; 
 	 	font-size: 16px ;
 	 	border-top: 0 ;
-	 	border-bottom: 2px solid ; 
+	 	border-bottom: 2px solid ;
+	 	width: 100% ;
+	 	text-align: justify-all;
 	 }
 
 
@@ -369,7 +415,7 @@ footer{margin:0 ;padding:0;}
 		}
 
 		.boutonNav2:active{
-		border-bottom: : 2px;
+		border-bottom: solid 2px;
 		border-bottom-color: #0065fc ;
 		border-top: 0 white; 
 		}
@@ -382,21 +428,35 @@ footer{margin:0 ;padding:0;}
     	border-top: 0 solid white ;
     	border-bottom-color: #0065fc;
 	}
-	.boutonSign{display: flex; flex-direction: row-reverse; }
+	.boutonSign{display: none ; }
 	.fa-star{margin-bottom: 0.2em}
+	.bouton3{display: none;}
+	.bouton4{display: flex ; padding-bottom: 1.5em ; margin-left: 20%;}
+
 
 	/* ECRAN MOBILE Barre de recherche */
 
-	#recherche{display: none}
-	.iconSearch{display: block;}
+	#searchbutton{display: none ;}
+	.iconSearch{display: inline-flex;
+	justify-content: center;
+	background-color: #0065FC ; 
+	font-weight: bold ;
+	color: white ;
+ 	padding : 1.1em 1.1em ; 
+ 	margin : 0; 
+ 	border : 1px solid; 
+	border-bottom-right-radius: 15px ; 
+	border-top-right-radius: 15px ;
+	font-size: 1em;}
 	/* ECRAN MOBILE FILTRES */
-	.filtres{display: inline-block;}
+	.filtres{display: flex ;flex-wrap: wrap; align-items: center; justify-content: space-between; width: 70%}
+	.itemfiltretitre{display: block; width: 100%;}
 	.itemfiltre{
 		margin-right : 0;
 		border: 2px solid #b1b1b1;
 	    border-radius: 2em;
 		font-size: 15px ;
-		padding-right: 0;
+
 }
 
 
@@ -405,12 +465,12 @@ footer{margin:0 ;padding:0;}
 		order : -1; 
 		width: 100% ;
 		margin: 0; 
-		padding : 0.8em;
-		margin-left: 0;}
+		padding: 1em;
+		margin-left: 0;
+		border-radius: 0;}
 
 	.aside{display: flex ; 
 		flex-flow: wrap column ;
-		align-items: center;
 		justify-content: center}
 
 	.figurePopu{
@@ -420,13 +480,13 @@ footer{margin:0 ;padding:0;}
 		border: white 3px solid;	
 		box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
 		width: 90%;}
-
+	h5{padding-left: 0.6em;}
 	.imgPopuColonne{
 	width: 150px ; 
 	max-width: 100% ; 
 	height : 135px;
-	}
-	#titrecategoriePopu{display: inline-block; text-align: left; justify-content: flex-start;}
+}
+	
 	.ColonneImage{display: inline-block;}
 	.figcaptionPopu{margin-left: 1px; float: right; max-width: 150px;}
 	.Nuit{margin-bottom: 0.9em;}
@@ -437,11 +497,11 @@ footer{margin:0 ;padding:0;}
 	article{width: 100% ;
 		display: flex ; 
 		flex-flow: wrap column ;
-		align-items: center;
 		justify-content: center;
 		order : 1;
 		background-color: white;
-		padding: 0;}
+		padding: 0;
+		margin-left: 0}
 
 	.photosarticle{
 		height: 150px;
@@ -449,25 +509,32 @@ footer{margin:0 ;padding:0;}
 		width: 320px;
 		}
 
+	.titrearticle{display: inline-flex; margin : 1em 0; padding-right: 1.5em ; justify-content: center;}
+
 
 	/* ECRAN MOBILE ACTIVITES */
 	.Activites{
 		width: 100% ;
 		border : white ; 
 		order : 2;}
-	.headerTitreActivites{font-size: 19px; padding-left: 4em ;}
+	#headerTitreActivites{font-size: 19px; padding-left: 1em ;}
 	.Activitessansheader{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 	 	flex-wrap: wrap;}
-	.actibloc1, .actibloc2{display: flex ; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center;}
+	.actibloc1, .actibloc2{
+		display: flex ; 
+		flex-direction: column; 
+		flex-wrap: wrap; 
+		justify-content: center; 
+		align-items: center;}
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
 	{width: 340px ; height: 120px; display: block ;}
 
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width:  340px; display: block ; }
-	.ActivitésLarge{max-width: 340px ; display: block ; }
+	.ActivitesLarge{max-width: 340px ; display: block ; }
 
 	/*ECRAN MOBILE  FOOTER */ 
 	footer{margin-right: 0;}
