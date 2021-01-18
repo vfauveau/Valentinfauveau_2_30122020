@@ -463,7 +463,7 @@ footer{margin:0 ;padding:0;}
 	/* ECRAN MOBILE SIDEBAR POPULAIRES */ 
 	aside{display: flex ; 
 		order : -1; 
-		width: 100% ;
+		width: 95% ;
 		margin: 0; 
 		padding: 1em;
 		margin-left: 0;
@@ -486,7 +486,8 @@ footer{margin:0 ;padding:0;}
 	max-width: 100% ; 
 	height : 135px;
 }
-	
+	#titrecategoriePopu{justify-content: flex-start;}
+	#titrepopu{font-size: 17px; margin: 0.5em 0; font-weight: bold; margin-right: 8em;}
 	.ColonneImage{display: inline-block;}
 	.figcaptionPopu{margin-left: 1px; float: right; max-width: 150px;}
 	.Nuit{margin-bottom: 0.9em;}
@@ -506,10 +507,10 @@ footer{margin:0 ;padding:0;}
 	.photosarticle{
 		height: 150px;
 		max-height  : 100%;
-		width: 320px;
+		width: 300px;
 		}
-
-	.titrearticle{display: inline-flex; margin : 1em 0; padding-right: 1.5em ; justify-content: center;}
+	h5{padding-left: 2em; margin-bottom: 0;}
+	.titrearticle{display: inline-flex; margin : 1em 0; padding-left: 2em; ; font-size: 17px;}
 
 
 	/* ECRAN MOBILE ACTIVITES */
@@ -517,7 +518,7 @@ footer{margin:0 ;padding:0;}
 		width: 100% ;
 		border : white ; 
 		order : 2;}
-	#headerTitreActivites{font-size: 19px; padding-left: 1em ;}
+	#headerTitreActivites{font-size: 17px; padding-left: 2rem ; padding-bottom: 0;}
 	.Activitessansheader{
 		display: flex;
 		flex-direction: column;
@@ -531,7 +532,7 @@ footer{margin:0 ;padding:0;}
 		justify-content: center; 
 		align-items: center;}
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
-	{width: 340px ; height: 120px; display: block ;}
+	{width: 300px ; height: 120px; display: block ;}
 
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width:  340px; display: block ; }
 	.ActivitesLarge{max-width: 340px ; display: block ; }
