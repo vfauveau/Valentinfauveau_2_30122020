@@ -239,6 +239,7 @@ margin : 0.6em 1em ;}
 .Activitessansheader{
 	display: flex;
 	width: 100% ;
+	justify-content: center;
 }
 .actibloc1, .actibloc2{display: flex ; }
 .ActiColonne4, .ActiColonne2{display: flex ; flex-direction: column; margin: 0 1em; }
@@ -533,7 +534,7 @@ footer{margin:0 ;padding:0;}
 		align-items: center;}
 	.ActivitesImgLarge1, .ActivitesImgColonne1, .ActivitesImgColonne2, .ActivitesImgLarge2, .ActivitesImgColonne3, .ActivitesImgColonne4, .ActivitesImgColonne
 	{width: 300px ; height: 120px; display: block ;}
-
+	.ActivitesImgLarge2{margin-top: 0;}
 	.ActivitesColonne{margin: 0 ; margin-bottom: 1em; max-width:  340px; display: block ; }
 	.ActivitesLarge{max-width: 340px ; display: block ; }
 
