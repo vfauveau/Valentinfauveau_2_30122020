@@ -285,6 +285,9 @@ footer{margin:0 ;padding:0;}
 		height: 10em;
 		max-height  : 100%;
 		width: 16em;}
+		.ActivitesImgLarge1, .ActivitesImgLarge2{width: 290px;}
+		.ActivitesImgColonne1, .ActivitesImgColonne3{width: 290px;}
+		..ActivitesImgColonne2, .ActivitesImgColonne4{width: 290px;}
 }
 
 
