@@ -394,10 +394,10 @@ footer{margin:0 ;padding:0;}
 		margin-top: 1em  ;}
 	.blocpage{margin: 0; padding: 0; display: block;}
 	header{
-	padding-top: 0.5em ; 
+	padding-top: 0 ; 
 	display:block; 
 	width: 100% ; 
-	padding-bottom: 1em;}
+	padding-bottom: 0;}
 
 	.main{max-width: 100% ; 
 		height: auto ;
@@ -410,8 +410,8 @@ footer{margin:0 ;padding:0;}
 	.blocintro{margin-left: 1.5em;}
 	.titreprincipal{
 		font-weight: bold;
-		font-size: 20px; 
-		width: 100%; }
+		font-size: 18px; 
+		width: 90%;  }
 
 	.logo{
 		display : flex ; 
@@ -419,7 +419,12 @@ footer{margin:0 ;padding:0;}
 		padding-top: 0; 
 		margin-bottom: 0.5em;
 	}
-
+	.blocMenu{padding: 0;   display: flex;
+		align-items: center;
+		justify-content: center;}
+	.boutonsNav{  display: flex;
+		align-items: center;
+		justify-content: center;}
 	.boutonNav1, .boutonNav2{
 	 	display : block ; 
 	 	margin: 0 ; 
@@ -486,10 +491,9 @@ footer{margin:0 ;padding:0;}
 	/* ECRAN MOBILE SIDEBAR POPULAIRES */ 
 	aside{display: flex ; 
 		order : -1; 
-		width: 95% ;
+		width: 100% ;
 		margin: 0; 
-		padding: 1em;
-		padding-right: 0.3em;
+		padding : 0	;
 		margin-left: 0;
 		border-radius: 0;}
 
@@ -500,10 +504,12 @@ footer{margin:0 ;padding:0;}
 	.figurePopu{
 		display: inline-block; 
 		margin-bottom: 2em; 
+		margin-left: 0.3em;
 		border-radius: 15px;
 		border: white 3px solid;	
 		box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.21);
-		width: 90%;}
+		width: 90%;
+		}
 	h5{padding-left: 0.6em;}
 	.imgPopuColonne{
 	width: 150px ; 
@@ -511,7 +517,7 @@ footer{margin:0 ;padding:0;}
 	height : 135px;
 }
 	#titrecategoriePopu{justify-content: flex-start;}
-	#titrepopu{font-size: 17px; margin: 0.5em 0; font-weight: bold; margin-right: 8em; padding-left: 1em;}
+	#titrepopu{font-size: 17px; font-weight: bold; margin-right: 8em;}
 	.ColonneImage{display: inline-block;}
 	.figcaptionPopu{margin-left: 1px; float: right; max-width: 150px;}
 	.Nuit{margin-bottom: 0.9em;}
@@ -534,15 +540,15 @@ footer{margin:0 ;padding:0;}
 		width: 300px;
 		}
 	h5{padding-left: 2em; margin-bottom: 0;}
-	.titrearticle{display: inline-flex; margin : 1em 0; padding-left: 2em; ; font-size: 17px;}
+	.titrearticle{display: inline-flex; padding-left: 2em; ; font-size: 17px;}
 
 
 	/* ECRAN MOBILE ACTIVITES */
 	.Activites{
-		width: 100% ;
 		border : white ; 
 		order : 2;}
-	#headerTitreActivites{font-size: 17px; padding-left: 2rem ; padding-bottom: 0;}
+	#headerTitreActivites{text-align: center;
+		padding-bottom: 0; margin-top: 0; padding-top: 0;}
 	.Activitessansheader{
 		display: flex;
 		flex-direction: column;
@@ -562,11 +568,11 @@ footer{margin:0 ;padding:0;}
 	.ActivitesLarge{max-width: 340px ; display: block ; }
 
 	/*ECRAN MOBILE  FOOTER */ 
-	footer{margin-right: 0;}
+	footer{margin-top : 0 ; margin-right : 0}
 	.titrefooter{margin-top: 1.5em;}
 	.touteslesColonnes{
 		display: block;
 	    max-width: 100%;
 	    text-align: left ;
-	    padding: 2em;margin: 1em;}
+	    padding: 2em;}
 }
